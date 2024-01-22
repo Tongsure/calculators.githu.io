@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=
+"en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatorstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="pic.png"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <section>
+        <div class="calculation">
+            <div class="main-calculate">
+                <div class="history">
+                    <div id="txt-history">
+                        <p>History</p>
+                    </div>
+                    <div id="history_number"></div>
+                    
+                </div>
+                <div class="button-display">
+                    <div class="main-display">
+                       <div id="expression" ></div>
+                       <div id="result"></div>
+                    </div>
+                    <div class="allIn_one">
+                        <div class="number">
+                            <div class="button">
+                                <input type="button" value="7" id="operator" onclick="number('7') ; numbers('7')">
+                                <input type="button" value="8" id="operator" onclick="number('8') ; numbers('8')">
+                                <input type="button" value="9" id="operator" onclick="number('9') ; numbers('9')">
+                                <!-- <input type="button" value="×" id="operator" onclick="number('×') ; numbers('*')"> -->
+                            </div>
+                            <div class="button">
+                                <input type="button" value="4" id="operator" onclick="number('4') ; numbers('4')">
+                                <input type="button" value="5" id="operator" onclick="number('5') ; numbers('5')">
+                                <input type="button" value="6" id="operator" onclick="number('6') ; numbers('6')">
+                                <!-- <input type="button" value="-" id="operator" onclick="number('-') ; numbers('-')"> -->
+                            </div>
+                            <div class="button">
+                                <input type="button" value="1" id="operator" onclick="number('1') ; numbers('1')">
+                                <input type="button" value="2" id="operator" onclick="number('2') ; numbers('2')">
+                                <input type="button" value="3" id="operator" onclick="number('3') ; numbers('3')">
+                                <!-- <input type="button" value="+" id="operator" onclick="number('+') ; numbers('+')"> -->
+                            </div>
+                            <div class="button">
+                                <input type="button" value="0" id="operator" onclick="number('0') ; numbers('0')">
+                                <input type="button" value="." id="operator" onclick="number('.') ; numbers('.')">
+                                <input type="button" value="⌫" id="operator" onclick="deletes()">
+                                <!-- <input type="button" value="+" id="operator" onclick="number('+') ; numbers('+')"> -->
+                            </div>
+                           
+                        </div>
+                        <div class="main_operator">
+                            <div class="button">
+                                <input type="button" value="÷" id="operatorss" onclick="number('÷') ; numbers('÷')">
+                                <input type="button" value="AC" id="Allcancel" onclick="clearDisplay()">
+                                <!-- <input type="button" value="=" id="operator" onclick="number('=') ; numbers('=')"> -->
+                                <!-- <input type="button" value="+" id="operator" onclick="number('+') ; numbers('+')"> -->
+                            </div>
+                            <div class="button">
+                                <input type="button" value="×" id="operatorss" onclick="number('×') ; numbers('÷')">
+                                <input type="button" value="( )" id="operatorss" onclick="number('(')">
+                                <!-- <input type="button" value="=" id="operator" onclick="number('=') ; numbers('=')"> -->
+                                <!-- <input type="button" value="+" id="operator" onclick="number('+') ; numbers('+')"> -->
+                            </div>
+                            <div class="button">
+                                <input type="button" value="-" id="operatorss" onclick="number('-') ; numbers('÷')">
+                                <input type="button" value="%" id="operatorss" onclick="number('%')">
+                                <!-- <input type="button" value="=" id="operator" onclick="number('=') ; numbers('=')"> -->
+                                <!-- <input type="button" value="+" id="operator" onclick="number('+') ; numbers('+')"> -->
+                            </div>
+                            <div class="button">
+                                <input type="button" value="+" id="operatorss" onclick="number('+') ; numbers('÷')">
+                                <input type="button" value="=" id="equal" onclick="Calculator()">
+                                <!-- <input type="button" value="=" id="operator" onclick="number('=') ; numbers('=')"> -->
+                                <!-- <input type="button" value="+" id="operator" onclick="number('+') ; numbers('+')"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="button">
+                        <input type="button" value="AC" id="operator" >
+                        <input type="button" value="DEL" id="operator" onclick="deletes()">
+                        <input type="button" value="%" id="operator" onclick="number('%') ; numbers('%')">
+                        <input type="button" value="÷" id="operator" onclick="number('÷') ; numbers('/')">
+                    </div> -->
+                </div>
+                <div id="time"></div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
